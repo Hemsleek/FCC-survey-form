@@ -1,8 +1,33 @@
 html , body{
     margin:0;
     padding:0;
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
 
 }
 *{
     box-sizing: border-box;
 }
+body{
+   
+    background-color: rgba(56, 57, 135, .5);
+}
+
+/*
+ HELPER STYLES START 
+=================
+*/
+
+.flex{
+    display: flex;
+    margin:auto;
+    background-color: #262647;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+/*
+ HELPER STYLES END 
+=================
+*/

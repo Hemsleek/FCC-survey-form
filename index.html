@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>survey form</title>
+    <title>survey form</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="flex flex-col">
+        <header>
+            <h1 id="title">Hemsleek Domain Survey Form</h1>
+            <p id="description">Ready!!...let's get started</p>
+         </header>
+
+        <form action="#" id="survey-form">
+            
+            <label id="name-label">
+                <input type="text" name="name" id="name" placeholder="name" required> 
+            </label>
+            <label id="email-label">
+                <input type="email" name="email" id="email" placeholder="email" required>
+            </label>
+            <label id="number-label">
+                <input type="number" name="number" id="number" placeholder="number" min="2" max="8" required>
+            </label>
+            
+            <select name="dropdown" id="dropdown">
+                <option value="1" id="dropdown">option1</option>
+                <option value="1" id="dropdown">option2</option>
+            </select>
+            
+            <label for="male">
+                <input type="radio" name="sex" value="male" id="male">male
+            </label>
+            <label for="female">
+                <input type="radio" name="sex"  value="female" id="female">female
+            </label>
+            
+
+            <label for="first">
+                <input id="first" type="checkbox" name="checking" value="1">first
+            </label>
+            <label for="second">
+                <input id="second" type="checkbox" name="checking" value="2">second
+            </label>
+            <label for="third">
+                <input id="third" type="checkbox" name="checking" value="3">third
+            </label>
+
+
+            <textarea name="comment" id="comment" cols="30" rows="10">
+                
+            </textarea>
+            <button type="submit" id="submit">submit</button>
+            
+        </form>
+    </div>
 </body>
 </html>

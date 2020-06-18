@@ -10,54 +10,86 @@
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div class="flex flex-col">
-        <header>
-            <h1 id="title">Hemsleek Domain Survey Form</h1>
-            <p id="description">Ready!!...let's get started</p>
-         </header>
+    <header>
+        <h1 id="title">HemsleekDomain Survey Form</h1>
+        <p id="description">Welcome...We Are excited To Know More About You, Get Started!!</p>
+    </header>
+    <div class="container">
 
-        <form action="#" id="survey-form">
+        <form class="flex align-start flex-col  justify-evenly "  action="#" id="survey-form">
             
-            <label id="name-label">
-                <input type="text" name="name" id="name" placeholder="name" required> 
-            </label>
-            <label id="email-label">
-                <input type="email" name="email" id="email" placeholder="email" required>
-            </label>
-            <label id="number-label">
-                <input type="number" name="number" id="number" placeholder="number" min="2" max="8" required>
-            </label>
+           
+                <label id="name-label">
+                        <caption>NAME</caption> <br>
+                        <input type="text" name="name" id="name" placeholder="Name" required> 
+                </label>
+                <label id="email-label">
+                    <caption>EMAIL</caption> <br>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </label>
+                <label id="phone-number">
+                    <caption>PHONE NUMBER</caption> <br>
+                    <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" maxlength="11" required>
+                </label>
+                <label id="number-label">
+                    <caption>AGE(Between age 5 and 65)</caption> <br>
+                    <input type="number" name="number" id="number" placeholder="Number" min="5" max="65" required>
+                </label>
             
-            <select name="dropdown" id="dropdown">
-                <option value="1" id="dropdown">option1</option>
-                <option value="1" id="dropdown">option2</option>
-            </select>
-            
-            <label for="male">
-                <input type="radio" name="sex" value="male" id="male">male
-            </label>
-            <label for="female">
-                <input type="radio" name="sex"  value="female" id="female">female
-            </label>
-            
-
-            <label for="first">
-                <input id="first" type="checkbox" name="checking" value="1">first
-            </label>
-            <label for="second">
-                <input id="second" type="checkbox" name="checking" value="2">second
-            </label>
-            <label for="third">
-                <input id="third" type="checkbox" name="checking" value="3">third
-            </label>
-
-
-            <textarea name="comment" id="comment" cols="30" rows="10">
                 
-            </textarea>
-            <button type="submit" id="submit">submit</button>
+                    <div class="radio-buttons flex flex-col align-start">
+                    
+                        <label for="male">
+                            <caption>SEX</caption> <br>
+                            <input type="radio" name="sex" value="male" id="male" checked>MALE
+                        </label>
+                        <label for="female">
+                            <input type="radio" name="sex"  value="female" id="female">FEMALE
+                        </label>
+                    </div>
+
+                <caption>Select Preferred Package</caption> <br>
+                <select id="dropdown">
+                    <option value="select" selected disabled  >select package</option>
+                    <option value="web" id="dropdown">Web(Html,CSS and JavaScript)</option>
+                    <option value="mobile" id="dropdown">Mobile Dev.(Andriod and IOS)</option>
+                    <option value="word-press" id="dropdown">Word Press</option>
+                    <option value="database" id="dropdown">Database Management(Mysql,MongoDB and PostgreSQL )</option>
+                </select>
+            
+                <div class="checkboxes flex flex-col">
+                    <label for="football">
+                        <caption>Select Favourite Sport(s)</caption> <br>
+                        <input id="football" type="checkbox" name="sport1" value="football">FOOTBALL
+                    </label>
+                    <label for="basketball">
+                    <input id="basketball" type="checkbox" name="sport2" value="basketball">BASKETBALL
+                    </label>
+                    <label for="volleyball">
+                    <input id="volleyball" type="checkbox" name="sport3" value="volleyball">VOLLEYBALL
+                    </label>
+                    <label for="tennis">
+                        <input id="tennis" type="checkbox" name="sport4" value="tennis">TENNIS
+                    </label>
+                    <label for="golf">
+                        <input id="golf" type="checkbox" name="sport5" value="golf">GOLF
+                    </label>
+                    <label for="baseball">
+                        <input id="baseball" type="checkbox" name="sport6" value="baseball">BASEBALL
+                    </label>
+                </div>
+            
+                <label for="textarea">
+                    <caption>Additional note?......leave a comment below</caption> <br>
+                    <textarea name="comment" id="comment" cols="76.5" rows="7">
+                        
+                    </textarea>
+                </label>
+            
+                <button type="submit" id="submit">submit</button>
             
         </form>
     </div>
+    
 </body>
 </html>

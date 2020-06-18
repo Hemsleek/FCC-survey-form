@@ -9,9 +9,15 @@ html , body{
     box-sizing: border-box;
 }
 body{
+    color: #f3f3f3;
+    background: url("../media/background-img.jpeg") #56568F;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: soft-light;
    
-    background-color: rgba(56, 57, 135, .5);
+    
 }
+
 
 /*
  HELPER STYLES START 
@@ -19,9 +25,15 @@ body{
 */
 
 .flex{
-    display: flex;
-    margin:auto;
-    background-color: #262647;
+    display: flex;   
+}
+.flex.align-center{
+    align-items: center;
+}.flex.align-start{
+    align-items: flex-start;
+}
+.flex.justify-evenly{
+    justify-content: space-evenly;
 }
 .flex-col{
     flex-direction: column;
@@ -31,3 +43,47 @@ body{
  HELPER STYLES END 
 =================
 */
+
+header{
+    text-align: center;
+}
+h1{
+    font-weight:400;
+    font-size: 2.29rem;
+    margin: 3.2rem 0 .2rem 0;
+}
+#description{
+    font-weight:200;
+    font-size: 1.286rem;
+    font-style: italic;
+    margin-top:0 ;
+}
+.container{
+
+    background-color: #262646;
+    opacity:.95;
+    border-radius: 1.5%;
+    margin:auto;
+    width: fit-content;
+}form{
+    padding: 2.5rem 3.2rem 3.5rem;
+    font-weight:400;
+    font-size:1.286rem;
+    
+}
+input[type="radio"]{
+    margin-left:0;
+}
+input[type="text"],input[type="number"],input[type="email"] ,select ,button{
+    font-size:1.143rem;
+    width:632px;
+    height:38px;
+    border-radius: 3%;
+}
+
+#submit{
+    background-color: #37AF65;
+    padding:.86rem;
+    text-align:center;
+}
+

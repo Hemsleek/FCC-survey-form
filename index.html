@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>survey form</title> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -12,81 +12,117 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header>
         <h1 id="title">HemsleekDomain Survey Form</h1>
-        <p id="description">Welcome...We Are excited To Know More About You, Get Started!!</p>
+    <p id="description">Welcome...We Are excited To Know More About You, Get Started!!</p>
     </header>
     <div class="container">
 
         <form class="flex align-start flex-col  justify-evenly "  action="#" id="survey-form">
             
-           
-                <label id="name-label">
-                        <caption>NAME</caption> <br>
-                        <input type="text" name="name" id="name" placeholder="Name" required> 
+            <div class="form-group">
+               
+               <label id="name-label">
+                   <caption>Name</caption> <br>
+                   <input type="text" name="name" id="name" placeholder="Enter your name" required> 
                 </label>
+            </div>
+
+            <div class="form-group">
+
                 <label id="email-label">
-                    <caption>EMAIL</caption> <br>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <caption>Email</caption> <br>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
                 </label>
+            </div>
+
+            <div class="form-group">
+
                 <label id="phone-number">
-                    <caption>PHONE NUMBER</caption> <br>
+                    <caption>Phone Number</caption> <br>
                     <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" maxlength="11" required>
                 </label>
+            </div>
+
+            <div class="form-group">
+
                 <label id="number-label">
-                    <caption>AGE(Between age 5 and 65)</caption> <br>
-                    <input type="number" name="number" id="number" placeholder="Number" min="5" max="65" required>
+                    <caption>Age <span class="age-range"> (Between age 5 and 65)</span></caption> <br>
+                    <input type="number" name="number" id="number" placeholder="Age" min="5" max="65" required>
                 </label>
+            </div>
             
                 
-                    <div class="radio-buttons flex flex-col align-start">
-                    
-                        <label for="male">
-                            <caption>SEX</caption> <br>
-                            <input type="radio" name="sex" value="male" id="male" checked>MALE
-                        </label>
-                        <label for="female">
-                            <input type="radio" name="sex"  value="female" id="female">FEMALE
-                        </label>
-                    </div>
+            <div class="form-group flex flex-col align-start">    
+                <caption>Sex</caption> <br>
+
+                <div class="radio flex align-center">    
+                    <input type="radio" name="sex" value="male" id="male" checked>
+                    <label for="male">Male</label>
+                </div>
+
+                <div class="radio flex align-center">
+                    <input type="radio" name="sex"  value="female" id="female">
+                    <label for="female">Female </label>
+                </div>
+            </div>
+
+            <div class="form-group">
 
                 <caption>Select Preferred Package</caption> <br>
                 <select id="dropdown">
-                    <option value="select" selected disabled  >select package</option>
+                    <option value="select" selected disabled hidden id="dropdown">Select package</option>
                     <option value="web" id="dropdown">Web(Html,CSS and JavaScript)</option>
                     <option value="mobile" id="dropdown">Mobile Dev.(Andriod and IOS)</option>
                     <option value="word-press" id="dropdown">Word Press</option>
                     <option value="database" id="dropdown">Database Management(Mysql,MongoDB and PostgreSQL )</option>
                 </select>
+            </div>
             
-                <div class="checkboxes flex flex-col">
-                    <label for="football">
-                        <caption>Select Favourite Sport(s)</caption> <br>
-                        <input id="football" type="checkbox" name="sport1" value="football">FOOTBALL
-                    </label>
-                    <label for="basketball">
-                    <input id="basketball" type="checkbox" name="sport2" value="basketball">BASKETBALL
-                    </label>
-                    <label for="volleyball">
-                    <input id="volleyball" type="checkbox" name="sport3" value="volleyball">VOLLEYBALL
-                    </label>
-                    <label for="tennis">
-                        <input id="tennis" type="checkbox" name="sport4" value="tennis">TENNIS
-                    </label>
-                    <label for="golf">
-                        <input id="golf" type="checkbox" name="sport5" value="golf">GOLF
-                    </label>
-                    <label for="baseball">
-                        <input id="baseball" type="checkbox" name="sport6" value="baseball">BASEBALL
-                    </label>
+                <caption> Select Favourite Sport(s)</caption>
+            <div class="form-group select flex flex-col">
+
+                <div class="checkbox flex align-center ">
+                    <input id="football" type="checkbox" name="sport1" value="football">  
+                    <label for="football">Football</label>
                 </div>
+
+                <div class="checkbox flex align-center">
+                        <input id="basketball" type="checkbox" name="sport2" value="basketball">
+                        <label for="basketball">Basketball</label>
+                </div>
+
+                <div class="checkbox flex align-center ">
+
+                    <input id="volleyball" type="checkbox" name="sport3" value="volleyball">
+                    <label for="volleyball">Volleyball</label>
+                </div>
+
+                <div class="checkbox flex align-center">
+                    <input id="tennis" type="checkbox" name="sport4" value="tennis">
+                    <label for="tennis">Tennis </label>
+                </div>
+
+                <div class="checkbox flex align-center">    
+                    <input id="golf" type="checkbox" name="sport5" value="golf">
+                    <label for="golf">Golf</label>
+                </div>
+
+                <div class="checkbox flex align-center">
+                    <input id="baseball" type="checkbox" name="sport6" value="baseball">
+                    <label for="baseball">Baseball</label>
+                </div>
+
+            </div>
+
             
-                <label for="textarea">
-                    <caption>Additional note?......leave a comment below</caption> <br>
-                    <textarea name="comment" id="comment" cols="76.5" rows="7">
-                        
-                    </textarea>
-                </label>
+            <div class="form-group">
+
+                <label for="comment">
+                        Additional note?......leave a comment below  
+               </label> <br>
+                <textarea cols="60" rows="7" placeholder="Enter your comment here..." name="comment" id="comment" ></textarea>
+            </div>
             
-                <button type="submit" id="submit">submit</button>
+            <button type="submit" id="submit">Submit</button>
             
         </form>
     </div>

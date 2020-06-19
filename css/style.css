@@ -12,7 +12,7 @@ body{
     color: #f3f3f3;
     background: url("../media/background-img.jpeg") #56568F;
     background-size: cover;
-    position: relative;
+    background-attachment: fixed;
     background-blend-mode: soft-light;
    
     
@@ -62,28 +62,77 @@ h1{
 
     background-color: #262646;
     opacity:.95;
-    border-radius: 1.5%;
+    border-radius: 6px;
     margin:auto;
     width: fit-content;
-}form{
+    
+}
+form{
     padding: 2.5rem 3.2rem 3.5rem;
     font-weight:400;
-    font-size:1.286rem;
+    font-size:1.28rem;
     
+}
+.form-group{
+    margin:0 0 20px;
+    padding:0.29rem;
+}
+.select{
+    margin-top: .4rem;
+}
+.radio{
+    margin-bottom:.5rem;
+}
+.checkbox{
+    margin-bottom:.5rem;
+}
+input, select{
+    padding:.5rem;
+    border-radius: 6px;
+}
+input[type="checkbox"]{
+   width:20px;
+   height:20px;
+   margin-right: .7rem;
+   
 }
 input[type="radio"]{
     margin-left:0;
+    margin-right:.7rem;
+    width:19px;
+    height:19px;
+   
 }
-input[type="text"],input[type="number"],input[type="email"] ,select ,button{
+input[type="text"],input[type="number"],input[type="email"] ,select{
     font-size:1.143rem;
     width:632px;
     height:38px;
-    border-radius: 3%;
-}
+}    
+.age-range{
+        font-size:1.03rem;
+    }
+        
+#dropdown{
+    color:#495057;
+    background-color:white;
+    padding:.5rem;
+    font-size:1.143rem; 
+    font-weight: normal;
+}   
 
+textarea{
+    padding:.7rem 0 0 .5rem;
+    font-size:1.143rem;
+    border-radius: 6px;
+    margin-top: .5rem;
+}    
 #submit{
+    font-size:1.143rem;
+    width: 632px;
+    color:white;
     background-color: #37AF65;
-    padding:.86rem;
+    padding:.9rem;
+    margin-bottom: 2rem;
     text-align:center;
-}
-
+    border-radius: 6px;
+}    

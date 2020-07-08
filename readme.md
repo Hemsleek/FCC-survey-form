@@ -3,7 +3,7 @@ One of the projects for Freecodecamp Responsive web design curriculum
 
 >instructions can be found [here](<https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form>)
 ## Getting started
-clone or download this repository ,run the `surveyForm.html` with favourite browser.
+clone or download this repository ,run the `index.html` with favourite browser.
 ## Preview
 [Demo](<https://mb-fcc-surveyform.netlify.app/>)
 
